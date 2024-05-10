@@ -40,8 +40,10 @@
       </ul>
     </section>
     <section class="support">
+        
+        <a href="/support.png"  class="download-button"  download>Download Image</a>
+        <button class="support-button" ">Show Your Support</button>
       <!-- <h2>Show Your Support</h2> -->
-      <button class="support-button" ">Show Your Support</button>
      
     </section>
    
@@ -55,9 +57,10 @@
  <script>
 document.querySelector('.support-button').addEventListener('click', function() {
     // Share on WhatsApp
-    var message = 'Support Awami Ittehad Party!';
-    var imageUrl = 'https://res.cloudinary.com/jkstudents/image/upload/v1715320692/support_myikuq.png';
-    var whatsappUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(message) + '&image=' + encodeURIComponent(imageUrl);
+
+let siteUrl = 'https://aamirbhat382.github.io/AIP/';
+
+let whatsappUrl = 'https://wa.me/?text=' + encodeURIComponent(siteUrl);
     window.open(whatsappUrl);
 });
 ;
